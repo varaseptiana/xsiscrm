@@ -474,3 +474,99 @@ Stack trace:
 REQUEST_URI=/manajemen-apartemen/index.php/hubunganAntarPenghuni/admin
 HTTP_REFERER=http://localhost/manajemen-apartemen/index.php/Gedung/admin
 ---
+2013/02/11 05:09:21 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xsiscrm.users' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `users`.
+in C:\xampp\htdocs\xsiscrm\protected\controllers\UserController.php (136)
+in C:\xampp\htdocs\xsiscrm\index.php (13)
+2013/02/11 05:09:21 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(403): CActiveRecord::model('User')
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\xsiscrm\protected\controllers\UserController.php(136): CActiveRecord->__construct('search')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): UserController->actionAdmin()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('User/admin')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\xsiscrm\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/xsiscrm/index.php/User/admin
+HTTP_REFERER=http://localhost/xsiscrm/index.php/site/index
+---
+2013/02/11 05:10:11 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xsiscrm.users' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `users`.
+in C:\xampp\htdocs\xsiscrm\protected\controllers\UserController.php (136)
+in C:\xampp\htdocs\xsiscrm\index.php (13)
+2013/02/11 05:10:11 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(403): CActiveRecord::model('User')
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\xsiscrm\protected\controllers\UserController.php(136): CActiveRecord->__construct('search')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): UserController->actionAdmin()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('User/admin')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\xsiscrm\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/xsiscrm/index.php/User/admin
+HTTP_REFERER=http://localhost/xsiscrm/index.php/site/index
+---
+2013/02/11 08:40:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "candidat/admin".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('candidat/admin')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\xsiscrm\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/xsiscrm/index.php/candidat/admin
+HTTP_REFERER=http://localhost/xsiscrm/index.php/personType/admin
+---
+2013/02/11 08:41:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "candidat/admin".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('candidat/admin')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\xsiscrm\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/xsiscrm/index.php/candidat/admin
+HTTP_REFERER=http://localhost/xsiscrm/index.php/personType/admin
+---
+2013/02/11 09:34:08 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\xsiscrm\protected\views\personType\_form.php:25)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(870): PersonTypeController->renderFile()
+#1 C:\xampp\htdocs\xsiscrm\protected\views\personType\create.php(18): PersonTypeController->renderPartial()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): PersonTypeController->renderInternal()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(870): PersonTypeController->renderFile()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(783): PersonTypeController->renderPartial()
+#6 C:\xampp\htdocs\xsiscrm\protected\controllers\PersonTypeController.php(79): PersonTypeController->render()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): PersonTypeController->actionCreate()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): PersonTypeController->runAction()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): PersonTypeController->filterAccessControl()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(266): PersonTypeController->runActionWithFilters()
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): PersonTypeController->run()
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\xsiscrm\index.php(13): CWebApplication->run()
+REQUEST_URI=/xsiscrm/index.php/personType/create
+in C:\xampp\htdocs\xsiscrm\protected\views\personType\_form.php (25)
+in C:\xampp\htdocs\xsiscrm\protected\views\personType\create.php (18)
+in C:\xampp\htdocs\xsiscrm\protected\controllers\PersonTypeController.php (79)
